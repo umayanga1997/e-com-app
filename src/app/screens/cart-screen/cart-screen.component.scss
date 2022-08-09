@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  padding: 20px;
+  & .items {
+    width: 70%;
+    margin: 10px;
+  }
+  & .price-details {
+    margin: 10px;
+    width: 30%;
+    text-align: end;
+  }
+}

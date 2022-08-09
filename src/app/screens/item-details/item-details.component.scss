@@ -1,0 +1,19 @@
+.data-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+  & .data{
+    width: 50%;
+    text-align: justify;
+    padding: 15px;
+    background-color: rgb(225, 241, 236);
+    border-radius: 10px;
+  }
+}

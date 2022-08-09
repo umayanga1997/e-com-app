@@ -1,0 +1,19 @@
+<div class="item">
+  <div class="details">
+    <img src="{{ item?.mainImage }}" alt="" />
+    <div class="row-data">
+      <h4>{{ item?.name }}</h4>
+      <p>{{ item?.brandName }}</p>
+      <p>{{ item?.price?.currency }}{{ item?.price?.amount }}</p>
+    </div>
+  </div>
+  <div class="qtyprice">
+    <p>Q: {{ item?.quantity }}</p>
+    <p>Total: GBP {{ item?.total }}</p>
+    <mat-card-actions align="end">
+      <button (click)="removeFromCard(item!)" mat-button color="accent">
+        Remove
+      </button>
+    </mat-card-actions>
+  </div>
+</div>

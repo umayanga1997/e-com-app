@@ -1,0 +1,22 @@
+.item {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(224, 255, 245);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  & img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding-right: 20px;
+  }
+  & .qtyprice {
+    text-align: start;
+  }
+  & .details{
+display: flex;
+align-items: center;
+  }
+}

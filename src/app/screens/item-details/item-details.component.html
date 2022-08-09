@@ -1,0 +1,14 @@
+<div class="data-container">
+    <img [src]="item?.mainImage" alt="" srcset="">
+    <div class="data">
+        <app-details-card title="Name" [value]="item?.name"></app-details-card>
+        <app-details-card title="Brand" [value]="item?.brandName"></app-details-card>
+        <app-details-card title="Color" [value]="item?.colour"></app-details-card>
+        <app-details-card title="Sizes" [value]="item?.sizes"></app-details-card>
+        <app-details-card title="Price" [value]="item?.price?.currency + ' ' + item?.price?.amount">
+        </app-details-card>
+        <app-details-card title="Stock" [value]="item?.stockStatus"></app-details-card>
+        <app-details-card title="Description" [value]="item?.description"></app-details-card>
+
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<mat-card class="example-card">
+
+    <div routerLink="/details/{{itemData?.id}}">
+        <img mat-card-image [src]="itemData?.mainImage" alt="Photo of a Shiba Inu">
+
+        <mat-card-title>{{itemData?.name}}</mat-card-title>
+        <mat-card-content>
+            <p>Brand : {{itemData?.brandName}}</p>
+            <p>{{itemData?.price?.currency}} {{itemData?.price?.amount}}</p>
+        </mat-card-content>
+
+        <h5 style="color: green;">{{itemData?.stockStatus}}</h5>
+
+    </div>
+    <mat-card-actions align="end">
+        <button (click)="addToCard(itemData!)" mat-button color="accent">Add To Cart</button>
+    </mat-card-actions>
+</mat-card>

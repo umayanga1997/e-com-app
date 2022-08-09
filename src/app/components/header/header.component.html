@@ -1,0 +1,13 @@
+<div class="header-nav">
+  <h4>E-Com--App</h4>
+
+  <mat-icon *ngIf="isCartPage" (click)="clearCart()">remove_shopping_cart</mat-icon>
+
+  <mat-icon
+    *ngIf="!isCartPage"
+    routerLink="/mycart"
+    [matBadge]="countOfItems"
+    matBadgeColor="warn"
+    >shopping_cart
+  </mat-icon>
+</div>

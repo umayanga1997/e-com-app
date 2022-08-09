@@ -1,0 +1,12 @@
+<app-header [isCartPage]="true"></app-header>
+<div class="container">
+    <div class="items">
+        <app-cart-item *ngFor="let data of itemList" [item]="data"></app-cart-item>
+    </div>
+    <div class="price-details">
+        <h4>Total: GBP </h4>
+        <p>{{totalOfAmount}}</p>
+        <p>Count of Items</p>
+        <p>{{itemList.length}}</p>
+    </div>
+</div>
